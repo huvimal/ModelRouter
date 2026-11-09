@@ -1,0 +1,13 @@
+[
+  {"id":"dev-label","split":"dev","task":"classify","text":"Tôi cần hoàn tiền cho chiếc áo đã trả.","expected":"refund"},
+  {"id":"dev-math","split":"dev","task":"calculate","text":"Hai món giá 35000 đồng mỗi món. Phí giao 20000 đồng. Tổng phải trả bao nhiêu đồng?","expected":90000},
+  {"id":"dev-id","split":"dev","task":"extract_order","text":"Vui lòng kiểm tra đơn VN1024 giúp tôi.","expected":"VN1024"},
+  {"id":"test-refund","split":"test","task":"classify","text":"Tôi đã gửi trả hàng và chưa nhận được tiền hoàn.","expected":"refund"},
+  {"id":"test-delivery","split":"test","task":"classify","text":"Đơn chưa tới, tôi muốn hỏi thời gian giao hàng.","expected":"delivery"},
+  {"id":"test-other","split":"test","task":"classify","text":"Cửa hàng mở cửa lúc mấy giờ sáng Chủ nhật?","expected":"other"},
+  {"id":"test-order","split":"test","task":"extract_order","text":"Mã đơn: VN2048. Nhờ kiểm tra trạng thái giúp.","expected":"VN2048"},
+  {"id":"test-order-missing","split":"test","task":"extract_order","text":"Tôi không còn nhớ mã đơn, có thể tra qua số điện thoại không?","expected":null},
+  {"id":"test-discount","split":"test","task":"calculate","text":"Hóa đơn 250000 đồng giảm 12% trước khi cộng phí giao 15000 đồng. Tổng phải trả bao nhiêu đồng?","expected":235000},
+  {"id":"test-tax","split":"test","task":"calculate","text":"Tạm tính 550000 đồng, thuế 55000 đồng, phiếu giảm giá trừ 20000 đồng sau thuế. Tổng phải trả bao nhiêu đồng?","expected":585000},
+  {"id":"test-quantity","split":"test","task":"calculate","text":"Mua 3 món giá 42000 đồng, 2 món giá 27000 đồng, sau đó trả lại 1 món giá 42000 đồng. Tổng còn lại bao nhiêu đồng?","expected":138000}
+]
